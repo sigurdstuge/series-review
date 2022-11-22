@@ -1,0 +1,7 @@
+@import './reset.css';
+
+@import './modules/contact.css';
+@import './modules/footer.css';
+@import './modules/header.css';
+@import './modules/series.css';
+@import './modules/slideshow.css';
