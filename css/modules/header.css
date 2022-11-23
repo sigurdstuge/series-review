@@ -1,0 +1,28 @@
+.header {
+	padding: 0 2rem;
+	background-color: #B98F8F;
+}
+
+.header__navigation {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__list {
+	display: flex;
+	list-style: none;
+	gap: 5rem;
+
+}
+
+.header__logo {
+	height: 2rem;
+	width: 2rem;
+}
+
+.header__logo img {
+	width: 100%;
+	height: auto;
+}
