@@ -17,6 +17,12 @@
  	border: solid 1px black;
 	border-radius: 4rem;
 	margin: 2rem;
+	transition: all 0.3s;
+ }
+
+ .contact__button:hover,
+ .contact__button:active {
+	background-color: #B98F8F;
  }
 
   
