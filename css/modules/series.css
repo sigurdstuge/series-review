@@ -2,7 +2,7 @@
 	display: flex;
 	flex-direction: row;
 	max-width: 120rem;
-	/* margin: 0 auto; */
+	margin: 30rem auto;
 }
 
 .series__container {
@@ -29,7 +29,6 @@
 
 .series__stars {
 	display: flex;
-	
 }
 
 .series__description,
