@@ -7,4 +7,7 @@ import slideshow from './modules/slideshow.js';
 contact();
 header();
 series();
-slideshow();
+
+for (const slideshowNode of document.querySelectorAll('.slideshow')) {
+	slideshow(slideshowNode);
+}

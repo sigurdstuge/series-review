@@ -1,11 +1,11 @@
-export default function slideshow() {
+export default function slideshow(slideshowNode) {
 	//data
 	let currentSlideIndex = 0;
 	
 	//Querryselector
-	const slides = document.querySelectorAll('.slideshow__slide');
-	const buttonLeft = document.querySelector('.slideshow__button--left');
-	const buttonRight = document.querySelector('.slideshow__button--right');
+	const slides = slideshowNode.querySelectorAll('.slideshow__slide');
+	const buttonLeft = slideshowNode.querySelector('.slideshow__button--left');
+	const buttonRight = slideshowNode.querySelector('.slideshow__button--right');
 	
 	//event listener
 	buttonLeft.addEventListener('click', handleButtonLeftClick);
@@ -21,7 +21,9 @@ export default function slideshow() {
 		renderHTML();
 	}
 	
-	//methoods
+	/**
+	 * 
+	 */
 	function increaseCurrentSlideIndex() {
 		if (currentSlideIndex === slides.length - 1) {
 			currentSlideIndex = 0
@@ -57,4 +59,3 @@ export default function slideshow() {
 	// Called methods
 	renderHTML();
 }
-
