@@ -61,3 +61,14 @@
 	width: 100%;
 	height: auto;
 }
+
+.header__other-links {
+	display: flex;
+	font-size: 2rem;
+	list-style: none;
+	gap: 5vw;
+}
+
+.header__other-links a:visited {
+	color: inherit;
+}
