@@ -1,9 +1,8 @@
 .slideshow {
-	width: 80vw;
-	height: 20rem;
-	margin: 0 auto;
+	width: 100%;
+	height: 10rem; 
 	position: relative;
-	background-color: red;
+	flex-grow: 1;
 }
 
 .slideshow__slide {
@@ -33,6 +32,9 @@
 	transform: translateY(-50%);
 	width: 4rem;
 	height: 4rem;
+	background: #B98F8F;
+	border-radius: 100%;
+	border: none;
 }
 
 .slideshow__button--left img, 
