@@ -6,12 +6,22 @@ export default function header() {
 	const navigationButton = document.querySelector('.header__navigation-button')
 	const navigation = document.querySelector('.header__navigation-list')
 	const navigationButtonSVG = document.querySelector('.header__navigation-button-svg')
+	const listItemButtons = document.querySelectorAll('.header__list-item-button')
 
 	// Event Listener
 	navigationButton.addEventListener('click', handleNavigationButtonClick)
+
+	for (const listItemButton of listItemButtons) {
+		listItemButton.addEventListener('click', handleListItemButtonClick)
+	}
 	
 	// Handlers 
 	function handleNavigationButtonClick() {
+		toggleNavigation();
+		renderHTML();
+	}
+
+	function handleListItemButtonClick() {
 		toggleNavigation();
 		renderHTML();
 	}
