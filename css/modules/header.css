@@ -6,6 +6,7 @@
 	align-items: center;
 	position: relative;
 	z-index: 50;
+	margin-bottom: 5rem;
 }
 
 .header__navigation {
