@@ -73,3 +73,9 @@
 .header__other-links a:visited {
 	color: inherit;
 }
+
+@media screen and (max-width: 550px) {
+	.header__other-links {
+		display: none;
+	}
+}
