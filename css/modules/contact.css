@@ -4,7 +4,24 @@
 	margin: 5rem auto;
 	max-width: 100rem;
 	gap: 2rem;
- }
+}
+
+.contact__header {
+	font-size: 4rem;
+	font-weight: 700;
+	text-align: center;
+}
+
+.contact__form {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.contact__input-container input, 
+.contact__input-container textarea {
+	font-size: 1.8rem;
+}
 
 .contact__input {
  border: solid 1px;
