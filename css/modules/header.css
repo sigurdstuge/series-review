@@ -70,6 +70,13 @@
 	gap: 5vw;
 }
 
+.header__list-item-button {
+	background: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	border: none;
+}
+
 .header__other-links a:visited {
 	color: inherit;
 }
@@ -83,4 +90,5 @@
 @media screen and (max-width: 350px) {
 	.header__navigation-list {
 		font-size: 2rem;
+	}
 }
