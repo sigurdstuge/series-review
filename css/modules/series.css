@@ -1,6 +1,5 @@
 .series {
 	display: flex;
-	flex-direction: row;
 	max-width: 120rem;
 	margin: 0 auto 30rem auto;
 }
@@ -59,4 +58,20 @@
 	font-size: 2rem;
 	font-weight: 600;
 	margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 550px) {
+	.series {
+		margin: 0 auto 15rem auto;
+	}
+
+	.series__container {
+		flex-direction: column;
+	}
+	.series__content__left,
+	.series__content__right {
+		width: 100%;
+	}
+
+
 }
