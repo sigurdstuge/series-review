@@ -39,7 +39,7 @@
 
 .series__actor-list {
 	margin-left: 4rem;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .series__header {
@@ -50,4 +50,12 @@
 .series__review {
 	font-size: 2rem;
 	margin-bottom: 2rem;
+}
+
+.series__description-header,
+.series__actor-header,
+.series__airing-header,
+.series__rating-header {
+	font-size: 2rem;
+	font-weight: 600;
 }
