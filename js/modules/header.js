@@ -17,6 +17,7 @@ export default function header() {
 	
 	// Handlers 
 	function handleNavigationButtonClick() {
+		console.log('hwi')
 		toggleNavigation();
 		renderHTML();
 	}
@@ -27,6 +28,7 @@ export default function header() {
 	}
 
 	// Methods
+	// toggles isnavigation between true and false
 	function toggleNavigation() {
 		if (isNavigationOpen === true) {
 			isNavigationOpen = false
@@ -40,7 +42,7 @@ export default function header() {
 		renderNavigationButton();
 	}
 
-	// add and remove class
+	// add and remove visible class
 	function renderNavigation() {
 		if (isNavigationOpen === true) {
 			navigation.classList.add('header__navigation-list--visible');
@@ -49,7 +51,7 @@ export default function header() {
 		}
 	}
 
-	// Change src on the button
+	// Change src icon on the button
 	function renderNavigationButton() {
 		if (isNavigationOpen === true) {
 			navigationButtonSVG.src='./assets/svg/close.svg'

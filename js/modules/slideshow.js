@@ -21,11 +21,8 @@ export default function slideshow(slideshowNode) {
 		renderHTML();
 	}
 	
-	/**
-	 * 
-	 */
-
-	// 
+	// Methods
+	//this function increases currentslideindex
 	function increaseCurrentSlideIndex() {
 		if (currentSlideIndex === slides.length - 1) {
 			currentSlideIndex = 0
@@ -34,7 +31,7 @@ export default function slideshow(slideshowNode) {
 		}
 
 	}
-
+// this function decreases currentslideindex
 	function decreaseCurrentSlideIndex() {
 		if (currentSlideIndex === 0) {
 			currentSlideIndex = slides.length - 1
@@ -47,7 +44,7 @@ export default function slideshow(slideshowNode) {
 	function renderHTML() {
 		renderSlideshow();
 	}
-
+// show slide based on currentslideindex
 	function renderSlideshow() {
 		for(let index = 0; index < slides.length; index += 1) {
 			slides[index].classList.remove('slideshow__slide--visible')
