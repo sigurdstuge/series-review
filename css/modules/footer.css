@@ -1,10 +1,18 @@
 .footer {
+	height: 10rem;
 	background-color: #B98F8F;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	padding:0 2rem;
 }
 
 .footer__item,
 .footer__item-header {
 	color: white;
+	font-size: 2rem;
+}
+
+.footer__item-header {
+	margin-bottom: 2rem;
 }
