@@ -24,6 +24,8 @@ export default function slideshow(slideshowNode) {
 	/**
 	 * 
 	 */
+
+	// 
 	function increaseCurrentSlideIndex() {
 		if (currentSlideIndex === slides.length - 1) {
 			currentSlideIndex = 0
@@ -31,7 +33,6 @@ export default function slideshow(slideshowNode) {
 			currentSlideIndex += 1
 		}
 
-		console.log(currentSlideIndex);
 	}
 
 	function decreaseCurrentSlideIndex() {
