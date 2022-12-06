@@ -19,15 +19,21 @@
 	margin: 0 1rem;
 }
 
+.contact__input {
+	border: solid 1px;
+	background-color: #B98F8F;
+	font-size: 2rem;
+}
+
 .contact__input-container input, 
 .contact__input-container textarea {
 	font-size: 1.8rem;
 }
 
-.contact__input {
- border: solid 1px;
- background-color: #B98F8F;
- font-size: 2rem;
+.contact__input-container {
+	display: flex;
+	flex-direction: column;
+	
 }
 
 .contact__button {
@@ -43,12 +49,6 @@
 .contact__button:hover,
 .contact__button:active {
 	background-color: #B98F8F;
-}
-
-.contact__input-container {
-	display: flex;
-	flex-direction: column;
-	
 }
 
 @media screen and (max-width: 550px) {
