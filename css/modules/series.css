@@ -9,14 +9,14 @@
 	width: 120rem;
 }
 
-.series__content__left {
+.series__content-left {
  	width: 50%;
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
 }
 
-.series__content__right {
+.series__content-right {
  	width: 50%;
 	padding: 2rem;
 	font-size: 2rem;
@@ -68,8 +68,8 @@
 	.series__container {
 		flex-direction: column;
 	}
-	.series__content__left,
-	.series__content__right {
+	.series__content-left,
+	.series__content-right {
 		width: 100%;
 	}
 
