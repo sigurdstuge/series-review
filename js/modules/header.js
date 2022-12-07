@@ -5,7 +5,7 @@ export default function header() {
 	*/ 
 	let isNavigationOpen = false;
 	
-	/*
+	/** 
 	* Querryselectors
 	* Here I select HTML elements that i want to interact with javascript. The reason I have it close to the top is that I know which HTML elements that's changed by javascript. I also need to select elements before eventlisteners.
 	*/ 
