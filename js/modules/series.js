@@ -1,5 +1,6 @@
 export default function series(seriesNode)  {
 	// Data
+	// This is the abstract model of stars
 	let amountOfStars = 0
 
 	//Query selector
@@ -10,8 +11,7 @@ export default function series(seriesNode)  {
 
 	//  addeventlistener
 	//  Here I listen to the an event on an element, in these cases a 'click'. When that event happens, it runs a handler function.
-	//  I use an anonomus function to be able to send in the index of the button
-	
+	//  I use an anonomus function to be able to send in the index of the button as a prameter.
 	for (let index = 0; index < starButtons.length; index += 1) {
 		starButtons[index].addEventListener('click', () => {
 			handleStarButtonclick(index)
@@ -20,11 +20,11 @@ export default function series(seriesNode)  {
 	 
 	//  handler
 	//  Here have the handlers that runs all the methods I want to happen. In that way I have ane overview of what happens in the code without looking at the methods themself.
- 	
 	function handleStarButtonclick(index) {
 		setAmountOfStars(index);
 		renderHTML();
 	}
+
 	// Methods
 	// Here I have all the methods, each function does one thing to make the code as clean as possible. Methods is a set of instructions to do a certain task.
 
@@ -43,10 +43,11 @@ export default function series(seriesNode)  {
 			amountOfStars = newAmountOfStars;
 		}
 	}
+
 	/**
 	 * This renders yellow stars
 	 * First loop removes all yellow stars so we can apply new yellow stars
-	 * amountOfStars decides how many of the stars should be yellow, as we loop over the stars untill the index is the same number as amountOf Stars
+	 * amountOfStars decides how many of the stars should be yellow, as we loop over the stars untill the index is the same number as amountOfStars
 	 * @see amountOfStars 
 	 */
 	function renderHTML() {
