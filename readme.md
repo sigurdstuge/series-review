@@ -1,0 +1,2 @@
+# Series Review
+In this project I had made reviews of three series where you are able to read about it, click between pictures in a slide-show and rate it. The logic of slides and star rating is reused between all series. The website includs a main menu where if you click one of the items you scroll to that section. The website also have a contact form where you can send in your suggestion. The website is responsive so you can browse it on desktop as well as a phone.  
