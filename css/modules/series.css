@@ -24,6 +24,7 @@
 
 .series__star {
 	width: 3rem;
+	border: none;
 }
 
 .series__stars {
