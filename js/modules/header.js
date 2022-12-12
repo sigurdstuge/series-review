@@ -21,7 +21,7 @@ export default function header() {
 	}
 
 	// Handlers 
-	// Here have the handlers that runs all the methods I want to happen. In that way I have ane overview of what happens in the code without looking at the methods themself.
+	// Here I have the handlers that runs all the methods I want to happen. That way I have ane overview of what happens in the code without looking at the methods themself.
 	function handleNavigationButtonClick() {
 		toggleNavigation();
 		renderHTML();
@@ -36,7 +36,7 @@ export default function header() {
 	// Here I have all the methods, each function does one thing to make the code as clean as possible. Methods is a set of instructions to do a certain task.
 
 	/**
-	 *  This method chnages the variable isnavigation between true and false. 
+	 *  This method changes the variable isnavigation between true and false. 
 	 */
 	function toggleNavigation() {
 		if (isNavigationOpen === true) {
