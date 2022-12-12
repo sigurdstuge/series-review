@@ -5,7 +5,7 @@ export default function slideshow(slideshowNode) {
 	
 	 
 	// Querryselectors 
-	// Here I select HTML elements that i want to interact with javascript. The reason I have it close to the top is that I know which HTML elements that's changed by javascript. I also need to select elements before eventlisteners.
+	// Here I select HTML elements that I want to interact with javascript. The reason I have it close to the top is that I know which HTML elements that's changed by javascript. I also need to select elements before eventlisteners.
 	const slides = slideshowNode.querySelectorAll('.slideshow__slide');
 	const buttonLeft = slideshowNode.querySelector('.slideshow__button--left');
 	const buttonRight = slideshowNode.querySelector('.slideshow__button--right');
@@ -18,7 +18,7 @@ export default function slideshow(slideshowNode) {
 
 
 	// Handlers 
-	// Here have the handlers that runs all the methods I want to happen. In that way I have ane overview of what happens in the code without looking at the methods themself.
+	// Here I have the handlers that runs all the methods I want to happen. In that way I have ane overview of what happens in the code without looking at the methods themself.
 
 	function handleButtonLeftClick() {
 		decreaseCurrentSlideIndex();
@@ -43,6 +43,7 @@ export default function slideshow(slideshowNode) {
 			currentSlideIndex += 1
 		}
 	}
+
 	/** 
 	* This function decreases the variable currentslideindex by 1, unles it's at the start of the array where it sets currentSlideIndex to end of array (slides.length - 1).
 	*/
@@ -56,7 +57,7 @@ export default function slideshow(slideshowNode) {
 	}
 
 	/*
-	* renderHTML is a main function who renders the HTML based on the abstract model.
+	* renderHTML is a main function who renders the HTML based on the JavaScript model.
 	*/
 	function renderHTML() {
 		renderSlideshow();
