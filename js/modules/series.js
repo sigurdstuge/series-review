@@ -4,13 +4,13 @@ export default function series(seriesNode)  {
 	let amountOfStars = 0
 
 	//Query selector
-	//Here I select HTML elements that i want to interact with javascript. The reason I have it close to the top is that I know which HTML elements that's changed by javascript. I also need to select elements before eventlisteners.
+	//Here I select HTML elements that I want to interact with javascript. The reason I have it close to the top is that I know which HTML elements that's changed by javascript. I also need to select elements before eventlisteners.
 	const starButtons = seriesNode.querySelectorAll('.series__star');
-	const starButtonsIcon = seriesNode.querySelectorAll('.series__star img');
+	const starButtonsIcons = seriesNode.querySelectorAll('.series__star img');
 
 
 	//  addeventlistener
-	//  Here I listen to the an event on an element, in these cases a 'click'. When that event happens, it runs a handler function.
+	//  Here I listen to an event on an element, in these cases a 'click'. When that event happens, it runs a handler function.
 	//  I use an anonomus function to be able to send in the index of the button as a prameter.
 	for (let index = 0; index < starButtons.length; index += 1) {
 		starButtons[index].addEventListener('click', () => {
@@ -18,8 +18,8 @@ export default function series(seriesNode)  {
 		})
 	}
 	 
-	//  handler
-	//  Here have the handlers that runs all the methods I want to happen. In that way I have ane overview of what happens in the code without looking at the methods themself.
+	//  Handler
+	//  Here have the handlers that runs all the methods I want to happen. That way I have ane overview of what happens in the code without looking at the methods themself.
 	function handleStarButtonclick(index) {
 		setAmountOfStars(index);
 		renderHTML();
@@ -52,11 +52,11 @@ export default function series(seriesNode)  {
 	 */
 	function renderHTML() {
 		for (let index = 0; index < starButtons.length; index += 1) {
-			starButtonsIcon[index].src = '/assets/svg/star.svg'
+			starButtonsIcons[index].src = '/assets/svg/star.svg'
 		}
 	
 		for (let index = 0; index < amountOfStars; index += 1)  {
-			starButtonsIcon[index].src = '/assets/svg/star-active.svg'
+			starButtonsIcons[index].src = '/assets/svg/star-active.svg'
 		}
 	}
 }
